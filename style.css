@@ -1,0 +1,139 @@
+* {
+  margin: 0px 5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+}
+
+#size {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: lightseagreen;
+}
+
+.container {
+  height: 100vh;
+}
+
+.header {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 4vw;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vw;
+  gap: 15px;
+  align-items: center;
+}
+
+.main {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.main__image {
+  background-image: url("/asian.jpg");
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  border-radius: 10px;
+}
+.main__text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__text-1 {
+  font-size: 10vw;
+}
+.main__text-2 span {
+  color: red;
+}
+.main__text-2, .main__text-3, .main__text-4 {
+  font-size: 5vw;
+}
+.main__text-5 {
+  font-size: 2vw;
+}
+
+.footer {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.footer__instagram img {
+  width: 5.3vw;
+}
+
+.footer__twitter img {
+  width: 5.3vw;
+}
+
+.footer__dribbble img {
+  width: 5.3vw;
+}
+
+.footer__behance img {
+  width: 5.3vw;
+}
+
+@media (max-width: 650px) {
+  .header {
+    justify-content: center;
+  }
+  .header__logo {
+    font-size: 40px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__image {
+    width: 300px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: 100%;
+  }
+  .main__text {
+    width: 100%;
+  }
+  .main__text-1 {
+    display: none;
+  }
+  .main__text-2, .main__text-3, .main__text-4 {
+    font-size: 30px;
+  }
+  .main__text-5 {
+    font-size: 15px;
+  }
+}
+.footer {
+  justify-content: center;
+  margin: 0px;
+}
+.footer [class^=footer__] img {
+  width: 45px;
+  height: 45px;
+}/*# sourceMappingURL=style.css.map */

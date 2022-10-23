@@ -1,0 +1,158 @@
+*{
+    margin: 0px 5px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    body{
+        font-family: sans-serif;
+    }
+}
+
+#size{
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: lightseagreen;
+}
+
+.container{
+    height: 100vh;
+}
+
+.header{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+//below is how to target the "header children" with sass
+    &__logo{
+        font-size: 4vw;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        font-size: 2.5vw;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+.main{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    
+
+    &__image{
+        background-image: url('/asian.jpg');
+        background-position: left center;
+        background-size: contain;  //////// this will keep the image responsive and not let part of the image get cut off when adjusting the screen sizes
+        background-repeat: no-repeat;
+        width: 50%;
+        border-radius: 10px;
+        
+    }
+    &__text{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &-1{
+            font-size: 10vw;
+        }
+
+        &-2 span{
+            color: red;
+        }
+        
+        &-2, &-3, &-4{
+            font-size: 5vw;
+        }
+
+        &-5{
+            font-size: 2vw;
+        }
+    }
+}
+
+.footer{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.footer__instagram img{
+    width: 5.3vw;
+}
+
+.footer__twitter img{
+    width: 5.3vw;
+}
+
+.footer__dribbble img{
+    width: 5.3vw;
+}
+
+.footer__behance img{
+    width: 5.3vw;
+}
+
+@media (max-width: 650px){
+    .header{
+
+        justify-content: center;
+
+        &__logo{
+            font-size: 40px;
+        }
+
+        &__menu{
+            display: none;
+        }
+    }
+
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image{
+            width: 300px;
+            height: 200px;
+            border-radius: 100%;
+            background-size: 100%;
+        }
+
+        &__text{
+            width: 100%;
+            &-1{
+                display: none;
+            }
+            &-2, &-3, &-4{
+                font-size: 30px;
+            }
+            &-5{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.footer{
+    justify-content: center;
+    margin: 0px;
+    [class^="footer__"]{  //// this will select all the "footer image tags" with sass
+        img{
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
