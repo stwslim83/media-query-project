@@ -43,7 +43,7 @@
   flex-direction: row;
 }
 .main__image {
-  background-image: url("/asian.jpg");
+  background-image: url("images/asian.jpg");
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
