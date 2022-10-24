@@ -44,11 +44,11 @@
 }
 .main__image {
   background-image: url("./images/asian.jpg");
-  background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 12px;
   width: 50%;
-  border-radius: 10px;
+  background-position: left center;
 }
 .main__text {
   width: 50%;
@@ -95,12 +95,21 @@
   width: 5.3vw;
 }
 
+.github {
+  border-radius: 50%;
+}
+
+.github:hover {
+  background-color: blue;
+}
+
 @media (max-width: 650px) {
   .header {
     justify-content: center;
   }
   .header__logo {
     font-size: 40px;
+    margin-top: 15px;
   }
   .header__menu {
     display: none;
@@ -111,10 +120,13 @@
     align-items: center;
   }
   .main__image {
-    width: 300px;
-    height: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 100%;
     background-size: 100%;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
   }
   .main__text {
     width: 100%;
