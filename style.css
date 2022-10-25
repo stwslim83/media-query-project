@@ -110,13 +110,13 @@
   .header__logo {
     font-size: 40px;
     margin-top: 15px;
+    border: 2px solid black;
   }
   .header__menu {
     display: none;
   }
   .main {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .main__image {
@@ -127,6 +127,7 @@
     border: 2px solid black;
     background-size: cover;
     background-position: center;
+    margin-bottom: 10px;
   }
   .main__text {
     width: 100%;
