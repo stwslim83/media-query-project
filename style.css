@@ -109,8 +109,8 @@
   }
   .header__logo {
     font-size: 40px;
-    margin-top: 15px;
-    border: 2px solid black;
+    margin-top: 10px;
+    
   }
   .header__menu {
     display: none;
