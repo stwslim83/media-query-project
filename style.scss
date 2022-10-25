@@ -114,6 +114,7 @@
 }
 
 @media (max-width: 650px){
+   
     .header{
 
         justify-content: center;
@@ -121,6 +122,7 @@
         &__logo{
             font-size: 40px;
             margin-top: 15px;
+            border: 2px solid black;
         }
 
         &__menu{
@@ -130,7 +132,6 @@
 
     .main{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 
         &__image{
@@ -141,6 +142,7 @@
             border: 2px solid black;
             background-size: cover;
             background-position: center;
+            margin-bottom: 10px;
         }
 
         &__text{
